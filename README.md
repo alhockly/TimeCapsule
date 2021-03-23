@@ -16,12 +16,14 @@ Install Samba and avahi.
 Avahi is for bonjour support which enables the computer to appear on the LAN as a .local address
 
 SAMBA VERSION MUST BE 4.8 OR HIGHER FOR TIME MACHINE COMPATIBILITY. You can check your version using `smbd -V`
+
 If samba 4.8 or higher is not available for your distro/archtecture you may find it on launchpad:
 https://launchpad.net/~linux-schools/+archive/ubuntu/samba-latest/+packages
+
 or at the van belle apt repo
 http://apt.van-belle.nl/
 
-alternatively it can be build from source but this is not for the faint of heart
+Alternatively it can be build from source but this is not for the faint of heart
 https://www.linuxsecrets.com/samba-wiki/index.php/Build_Samba_from_Source.html
 
 
@@ -29,13 +31,13 @@ https://www.linuxsecrets.com/samba-wiki/index.php/Build_Samba_from_Source.html
 ### Step 4
 Configure samba via `sudo nano /etc/samba/smb.conf`
 
-Pastr in the contents of the smb.conf file from this repo and edit the path variable on line 51 to point to the path you want to be used for backups
+Paste in the contents of the smb.conf file from this repo and edit the path variable on line 51 to point to the path you want to be used for backups
 
 You should only need to change the lines under the `[Time Capsule]` definition
 
 check config is correct with `sudo testparm -s`
 
-restart samba `sudo service smbd restart`
+Restart samba `sudo service smbd restart`
 
 ### Step 5
 Add a new user to samba `sudo smbpasswd -a <username>`
@@ -65,7 +67,7 @@ On Debian and Ubuntu you can use `sudo nano /etc/hostname` and `sudo nano /etc/h
 
 
 
-some articles I used
+Some articles I used:
 
 >[install samba on pi] https://mudge.name/2019/11/12/using-a-raspberry-pi-for-time-machine/
 >[time machine on remote share] https://www.imore.com/how-use-time-machine-backup-your-mac-windows-shared-folder
