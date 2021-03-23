@@ -4,7 +4,7 @@ This guide simply creates a Samba (as refered to as smb) server with configurati
 
 ### Step 1
 Find an old computer to use for this project. I bought an old i386 Acer aspire r3610, it was cheap and has a ethernet port. As it is a 32-bit computer I was unable to download the latest version of Ubuntu. Using a 32bit computer may make maintainance more difficult in the future, althought I am happy with my build thus far. I wouldn't reccomend a raspberry pi for this project either as it has limited ram and no SATA support, this may change in the future of course.
-You could also you a laptop for this project, as long as it runs Linux. Don't forget to upgrade the storage!
+You could also use a laptop for this project, as long as it runs Linux. Don't forget to upgrade the storage!
 
 ### Step 2 
 Install Linux. I reccomend Ubuntu for 64 bit computers and Debian for 32-bit. 
@@ -15,7 +15,7 @@ Install Samba and avahi.
 
 Avahi is for bonjour support which enables the computer to appear on the LAN as a .local address
 
-SAMBA VERSION MUST BE 4.8 OR HIGHER. You can check your version using `smbd -V`
+SAMBA VERSION MUST BE 4.8 OR HIGHER FOR TIME MACHINE COMPATIBILITY. You can check your version using `smbd -V`
 If samba 4.8 or higher is not available for your distro/archtecture you may find it on launchpad:
 https://launchpad.net/~linux-schools/+archive/ubuntu/samba-latest/+packages
 or at the van belle apt repo
