@@ -69,10 +69,14 @@ On Debian and Ubuntu you can use `sudo nano /etc/hostname` and `sudo nano /etc/h
 
 Some articles I used:
 
->[install samba on pi] https://mudge.name/2019/11/12/using-a-raspberry-pi-for-time-machine/
->[time machine on remote share] https://www.imore.com/how-use-time-machine-backup-your-mac-windows-shared-folder
+>https://mudge.name/2019/11/12/using-a-raspberry-pi-for-time-machine/
+>
+>https://www.imore.com/how-use-time-machine-backup-your-mac-windows-shared-folder
+>
 >https://wiki.samba.org/index.php/Configure_Samba_to_Work_Better_with_Mac_OS_X
+>
 >https://www.thedigitalpictureframe.com/installing-samba-on-your-raspberry-pi-buster-and-optimizing-it-for-macos-computers/
+>
 >https://surrouter.asuscomm.com/surblog/2019/05/05/mac-timemachine-with-samba-4-8-on-ubuntu-18-10/
 
 Samba docs: https://www.samba.org/samba/docs/current/man-html/samba.7.html
