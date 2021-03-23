@@ -27,8 +27,9 @@ https://www.linuxsecrets.com/samba-wiki/index.php/Build_Samba_from_Source.html
 
 
 ### Step 4
-configure samba via `sudo nano /etc/samba/smb.conf`
-change the contents to the contents of this file https://github.com/alhockly/pi-wireless-drive/blob/master/smb.conf
+Configure samba via `sudo nano /etc/samba/smb.conf`
+
+Pastr in the contents of the smb.conf file from this repo and edit the path variable on line 51 to point to the path you want to be used for backups
 
 You should only need to change the lines under the `[Time Capsule]` definition
 
@@ -56,6 +57,7 @@ Once you establish a connection with the server login with the details you speci
 ### Step 2
 You should now be able to add the new network loctation as a Time Machine backup location in System Preferences
 
+Note: The intial backup may take a very long time, Time Machine is designed to be slow. I reccomend excluding most items from the backup to add them pregressively until you have achieved a full backup.
 
 ## Optional 
 
