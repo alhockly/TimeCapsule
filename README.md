@@ -46,6 +46,8 @@ Enable new user `sudo smbpasswd -e <username>`
 
 Copy timemachine.service from this repo to /etc/avahi/services to enable .local address broadcasting
 
+### Step 6
+Copy timemachine.service from this repo to /etc/avahi/services to have the Timecapsule advertise itself on the network as a Apple Timecapsule™️
 
 ## MacOS config
 
